@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr_Animalis.DEV — Full-stack developer & builder</title>
+<meta name="description" content="Portfolio of Dr_Animalis, a full-stack developer building web apps, tools, and AI experiments.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230a0a0d%22/><text x=%2250%22 y=%2266%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%237c6cf0%22 font-family=%22monospace%22>&gt;_</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<!-- ============================= NAV ============================= -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo" aria-label="Dr_Animalis home">Dr_animalis<span class="dot">.DEV</span></a>
+
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div style="display:flex; align-items:center; gap: 1rem;">
+      <div class="status-pill">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="label">ONLINE</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#about" class="nav-link">About</a>
+  <a href="#projects" class="nav-link">Projects</a>
+  <a href="#skills" class="nav-link">Skills</a>
+  <a href="#contact" class="nav-link">Contact</a>
+</div>
+
+<!-- ============================= HERO ============================= -->
+<header class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <span class="hero-label">hello_world</span>
+      <h1 class="hero-title">I'm <span class="accent">Dr_Animalis.</span></h1>
+      <p class="hero-sub">Full-stack developer &amp; builder.</p>
+      <p class="hero-desc">I build websites, tools, experiments, and other things with code.</p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="reveal in" style="transition-delay:0.1s;">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="terminal-dot r"></span>
+          <span class="terminal-dot y"></span>
+          <span class="terminal-dot g"></span>
+          <span class="terminal-title">dr_animalis — zsh</span>
+        </div>
+        <div class="terminal-body" id="heroTerminal" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================= ABOUT ============================= -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="section-head">
+        <span class="eyebrow">01 / ABOUT</span>
+        <h2 class="section-title">Still figuring it out — and enjoying that part.</h2>
+      </div>
+      <div class="about-text">
+        <p>I'm a full-stack developer who spends most of my time somewhere between the frontend and the backend, poking at whatever seems interesting that week. Web development is home base, but I end up wherever the problem takes me.</p>
+        <p>Most days that means JavaScript and Python, some HTML/CSS to make things look right, and Node.js to make things actually work. Lately I've been spending a lot of time experimenting with AI and LLMs — running local models, building small chat tools, and seeing what they're actually good for.</p>
+        <p>I don't have a single specialty so much as a habit: pick something I don't fully understand, build a rough version of it, and go from there.</p>
+      </div>
+      <div class="about-tags">
+        <span class="tag">Full-stack development</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Python</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">AI / LLMs</span>
+      </div>
+    </div>
+
+    <div class="reveal" style="transition-delay:0.1s;">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="terminal-dot r"></span>
+          <span class="terminal-dot y"></span>
+          <span class="terminal-dot g"></span>
+          <span class="terminal-title">about.txt</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line"><span class="prompt">$</span> cat about.txt</div>
+          <div class="terminal-line out">I like building things,
+breaking things,
+and figuring out
+how things work.</div>
+          <div class="terminal-line"><span class="prompt">$</span> <span class="cursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PROJECTS ============================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">02 / PROJECTS</span>
+      <h2 class="section-title">Things I've built.</h2>
+      <p class="section-sub">A mix of finished ideas, half-finished ideas, and things that started as one and became the other.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <h3 class="project-name">SwiftDental</h3>
+          <span class="project-index">01</span>
+        </div>
+        <p class="project-desc">An AI-powered dental chatbot concept — exploring how a simple conversational interface could help patients ask questions and get pointed in the right direction.</p>
+        <div class="project-tags">
+          <span class="tag">AI</span><span class="tag">HTML</span><span class="tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub →</a>
+          <a href="#" class="project-link">Demo →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="transition-delay:0.05s;">
+        <div class="project-top">
+          <h3 class="project-name">Tosh</h3>
+          <span class="project-index">02</span>
+        </div>
+        <p class="project-desc">A text-based, web-based programming environment inspired by Scratch — bringing block-style logic into a lightweight code editor.</p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span><span class="tag">Web</span><span class="tag">Editor</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="transition-delay:0.1s;">
+        <div class="project-top">
+          <h3 class="project-name">NasiCTF</h3>
+          <span class="project-index">03</span>
+        </div>
+        <p class="project-desc">A Capture The Flag platform for cybersecurity challenges — built to host and run CTF-style puzzles for learning and practice.</p>
+        <div class="project-tags">
+          <span class="tag">Web</span><span class="tag">Node.js</span><span class="tag">CTF</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub →</a>
+          <a href="#" class="project-link">Demo →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="transition-delay:0.15s;">
+        <div class="project-top">
+          <h3 class="project-name">QR Scanner</h3>
+          <span class="project-index">04</span>
+        </div>
+        <p class="project-desc">A web-based QR scanning and attendance project, built for quickly checking people in using nothing but a browser camera.</p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span><span class="tag">QR</span><span class="tag">Web App</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="transition-delay:0.2s;">
+        <div class="project-top">
+          <h3 class="project-name">AI Chatbot</h3>
+          <span class="project-index">05</span>
+        </div>
+        <p class="project-desc">A locally running chatbot built on Ollama and open-source models — no API keys, no cloud, just a model running on my own machine.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">Ollama</span><span class="tag">LLM</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="transition-delay:0.25s;">
+        <div class="project-top">
+          <h3 class="project-name">Experimental Projects</h3>
+          <span class="project-index">06</span>
+        </div>
+        <p class="project-desc">A collection of random experiments, prototypes, games, and tools — the stuff that didn't need its own repo name but was worth building anyway.</p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">Experiments</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SKILLS ============================= -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">03 / SKILLS</span>
+      <h2 class="section-title">What I work with.</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <span class="skill-cat">Languages</span>
+        <ul class="skill-list">
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.05s;">
+        <span class="skill-cat">Backend</span>
+        <ul class="skill-list">
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.1s;">
+        <span class="skill-cat">Tools</span>
+        <ul class="skill-list">
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Selenium</li>
+          <li>Ollama</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.15s;">
+        <span class="skill-cat">Other</span>
+        <ul class="skill-list">
+          <li>AI / LLMs</li>
+          <li>Web automation</li>
+          <li>UI development</li>
+          <li>Experimental projects</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= STATS ============================= -->
+<section id="stats">
+  <div class="wrap stats-wrap">
+    <div class="stats-card reveal">
+      <div class="stats-title">DEVELOPER_STATS</div>
+      <div class="stat-row"><span class="k">Projects</span><span class="v">10+</span></div>
+      <div class="stat-row"><span class="k">Technologies</span><span class="v">10+</span></div>
+      <div class="stat-row"><span class="k">Status</span><span class="v building">BUILDING</span></div>
+      <div class="stat-row"><span class="k">Coffee</span><span class="v">∞</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= CONTACT ============================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <span class="eyebrow" style="justify-content:center;">04 / CONTACT</span>
+      <h2 class="contact-title">Let's build something.</h2>
+      <p class="contact-desc">Have an idea, project, or something interesting to build?</p>
+      <div class="contact-links">
+        <a href="#" class="contact-link">GitHub — YOUR_GITHUB</a>
+        <a href="#" class="contact-link">Discord — YOUR_DISCORD</a>
+        <a href="#" class="contact-link">Email — YOUR_EMAIL</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-copy">© 2026 Dr_Animalis</div>
+        <div class="footer-tag">Built with code, curiosity, and probably too much caffeine.</div>
+      </div>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">Discord</a>
+      </div>
+    </div>
+    <div class="footer-exit">&gt; exit</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
